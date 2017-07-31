@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<style>
+	h1{
+
+	}
+		.box{
+			width:100px;
+			float: left;
+			list-style: none;
+			position: relative;
+			border:2px solid black;
+			padding:10px;
+			border-radius: 22px;
+			transition: font-size 4s ease;
+		}
+		li:hover{
+			box-shadow: 10px 10px 13px red;
+			transform: scale(1.5);
+			position: relative;
+			text-decoration: underline;
+			border: 5px double green;
+			font-size: 50px;
+		}
+		#two:hover{
+			transform: translate(10px,20px);
+		}
+		#three:hover{
+			transform: rotate(30deg);
+		}
+		#four:hover{
+			transform: skew(20deg,-10deg);
+		}
+	</style>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl" >
+	<!-- -------------------- Scale ---------------------- -->
+	<h1>Scale</h1>
+	<ul ng-repeat="list in lists">
+		<li class="box">
+			{{list.name}}
+		</li>
+	</ul>
+	<!-- -------------------- translate --------------------- -->
+	<br>
+	<h1>Translate</h1>
+    <ul ng-repeat="list in lists">
+		<li class="box" id="two">
+			{{list.name}}
+		</li>
+	</ul>
+	<!-- -------------------- rotate---------------------- -->
+	<br>
+	<h1>Rotate</h1>
+	<ul  ng-repeat="list in lists">
+		<li class="box" id="three">{{list.name}}</li>
+	</ul>
+	<!-- -------------------- skew ---------------------- -->
+	<br>
+	<h1>skew</h1>
+	<ul  ng-repeat="list in lists">
+		<li class="box" id="four">{{list.name}}</li>
+	</ul>
+
+ <script>
+ 	angular.module("myApp",[])
+ 	.controller("myCtrl",function($scope){
+ 		$scope.lists = [
+ 			 {name:'one'},
+ 			// {name:'two'},
+ 			// {name:'three'}
+ 		]
+ 	})
+ </script>
+</body>
+</html>

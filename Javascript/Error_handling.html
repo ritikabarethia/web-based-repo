@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<a href="" onmouseover="Function1()">onmouseover</a> 
+
+	<script type="text/javascript">
+		function Function1(){
+			try{
+				document.write("try block calling function which is not defined");
+				NotDeclared();
+			}catch(e){
+				document.write("<br>this is a catch block. exception "+e);
+			}
+
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Array</h1>
+<input type="button" value="loop" onclick="Loop()">
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<script type="text/javascript">
+	var fruits  =  ['Mango','Banana', 'kiwi'];
+
+		document.write("array.toString -> "+fruits.toString());
+		document.write("<br>array  -->  "+fruits);
+		document.write("<br>array.join(\"*\") -->"+fruits.join("*"));
+
+		document.write("<br><br><b>Sort() by default it sort as string</b><br>array.sort() -> "+fruits.sort());
+		document.write("<br>array.reverse() -> "+fruits.reverse());
+
+		fruits.push("Papaya");
+		document.write("<br><br><b>Push and  Pop always from last</b><br>array.push(\"Papaya\") -> "+fruits);
+		fruits.pop();
+		document.write("<br>array.pop() -> "+fruits);
+		fruits.shift();
+		document.write("<br><br><b>shift() and unshift() always from front</b><br>array.shift() -> "+fruits);
+		fruits.unshift("Grapes");
+		document.write("<br>fruits.unshift(\"Grapes\")--> "+fruits);
+
+		fruits[1] ="Lemon";
+		document.write("<br><br>fruits[1]=\"Lemon\"; -->"+ fruits);
+
+		delete fruits[1];
+		document.write("<br><b>delete fruits[1];</b> becomes undefined but its space is there -> "+ fruits);
+
+		fruits.splice(2,1,"watermelon","Orange");
+		document.write("<br><br><b>splice(2,0,\"watermelon\",\"Orange\");</b> 2 where place, 1 remove ->"+fruits);
+		document.write("<br>slice(\",\") used in string ")
+
+
+		document.write("<br><br>Loop");
+		function Loop() {
+			var fruit=["Mango","Papaya","kiwi","Orange"];
+			for(var i=0;i<fruit.length;i++){
+				document.getElementsByTagName('p')[i].innerHTML = fruit[i];
+			}
+		}
+
+		document.write("<br><br><b>*Array to string*</b>");
+		document.write("<br>fruits[0] "+fruits[0]);
+		document.write("<br>fruits.toString()[0] "+fruits.toString()[0]);
+
+document.write("<br><br><br><br><br><br><br><br>");
+</script>
+</body>
+</html>

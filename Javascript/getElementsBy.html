@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h3>Finding element using ID in JavaScript</h3>
+	<h1>getElementsByTagName()</h1>
+
+	2. <a href="" onclick="Function2()">var b= get...  b[1].innerHTML=50</a><br>
+	1. <a href="" onmouseover="Function1()" onmouseleave="Refresh()">document.getElementsByTagName('p')[0].innerHTML=hello</a>
+	<br>
+	<p>0</p>
+	<p>1</p>
+
+	<hr>
+	<h1>getElementsByClassName()</h1>
+	1. <a href="" onclick="Function3()">var b= document.getElementsByClassName('abc'); b[1].innerHTML=""</a>
+	<p class="abc">one</p>
+	<p class="abc">two</p>
+
+	<script type="text/javascript">
+	function Function1() {
+		document.getElementsByTagName('p')[0].innerHTML = "hell0";
+	}
+	function Function2(){
+		var b= document.getElementsByTagName('p');
+		b[1].innerHTML=50;
+		document.write("b.length "+b.length);
+	}
+	function Function3(){
+		var b= document.getElementsByClassName('abc');
+		b[1].innerHTML ="second p";
+	}
+	function Refresh(){
+		location.reload();
+	}
+	</script>
+</body>
+</html>

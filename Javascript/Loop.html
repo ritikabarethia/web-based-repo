@@ -1,0 +1,23 @@
+<pre>
+<input type="text" name="">1<span></span>
+<input type="text" name="">2<span></span>
+<input type="text" name="">3<span></span>
+<input type="text" name="">4<span></span>
+<input type="text" name="">5<span></span>
+<input type="text" name="">6<span></span>
+<input type="button"  value="submit" onclick="return validate()" name="">
+not working
+
+</pre>
+<script type="text/javascript">
+	var a= document.getElementsByTagName('input');
+	var b= document.getElementsByTagName('span');
+	document.write(a.length);
+
+	function validate() {
+	for(var i=0;i<a.length;i++){
+		document.write(i);
+	}
+	}
+
+</script>

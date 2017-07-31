@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<a href="" onclick="Function1()">Pop up</a>->1.window.open("http://techfunda.com/howto/435/opening-popup-window","","width=200,height=300")
+		<br>
+		<a href="" onclick="Function2">Redirect url</a>2.
+			alert(location.href);
+			location.href = "http://techfunda.com/howto/436/redirecting-to-other-page";
+		<br>
+
+		<input type="button" value="Refresh" onclick="Refresh()" />3.location.reload()
+		<br>
+		<br>
+		<br>
+
+		<script type="text/javascript">
+		
+		function Function1() {
+			window.open("http://techfunda.com/howto/435/opening-popup-window","","width=200,height=300");
+		}
+			
+		function Function2(){
+			alert(location.href);
+			location.href = "http://techfunda.com/howto/436/redirecting-to-other-page";
+		}
+		function Refresh(){
+			location.reload();
+		}
+		document.write("<hr/>");
+
+		var a= "hello worls";
+		var b= a.length;
+		document.write(a);
+		document.write("<br>.length "+b);
+
+		document.write("<br>.charAt 10 ")
+		document.write(a.charAt(10));
+
+		document.write("<br>.indexOf 10 ");
+		document.write(a.indexOf(10));
+
+		document.write("<br>.big() ".big());
+
+		document.write("<br>.small()".small());
+
+		document.write("<br>.bold() ".bold());
+
+		document.write("<br>This is italics()".italics());
+		document.write("<br>strike()".strike());
+
+		document.write("<br>sub() h");
+		document.write("2".sub());
+		document.write("O");		
+
+		document.write("<br>sup() X");
+		document.write("2".sup());
+
+		document.write("<br>toLowerCase()");
+		document.write("\"THIS IS WRITTEN IN CAPITAL\"".toLowerCase())
+
+		document.write("<br>toUpperCase");
+		document.write(" this is in lowercase\"".toUpperCase());
+
+		document.write("<br>replace()->my with our-->");
+		document.write(" \"this is my creativity\"".replace("my","our"));
+
+		document.write("<hr/>");
+
+
+
+		</script>
+</body>
+</html>
